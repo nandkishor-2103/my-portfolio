@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./output.css" />
+
+    <!-- Icons  CDN Link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- ========== Navbar Section ========== -->
+
+    <header class="bg-gray-800 fixed w-full shadow-md z-10">
+      <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <!-- Logo -->
+        <h1 class="text-xl font-bold">My Portfolio</h1>
+
+        <!-- Menu for Desktop -->
+        <ul class="hidden md:flex space-x-6">
+          <li>
+            <a
+              href="#home"
+              class="inline-block duration-300 ease-in-out hover:scale-110 hover:text-blue-400"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="inline-block duration-300 ease-in-out hover:scale-110 hover:text-blue-400"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="inline-block duration-300 ease-in-out hover:scale-110 hover:text-blue-400"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="inline-block transition-transform duration-300 ease-in-out hover:scale-110 hover:text-blue-400"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Overlay -->
+      <div
+        id="overlay"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden z-40 md:hidden"
+      ></div>
+
+      <!-- Mobile Menu (Slide-in Sidebar) -->
+      <div
+        id="mobile-menu"
+        class="fixed top-0 right-0 h-full w-64 bg-gray-800 shadow-lg transform translate-x-full transition-transform duration-300 z-50 md:hidden"
+      >
+        <div class="flex flex-col p-6 space-y-6">
+          <!-- Close Button -->
+          <button id="close-menu" class="self-end text-2xl">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <!-- Links -->
+          <a href="#home" class="hover:text-blue-400">Home</a>
+          <a href="#about" class="hover:text-blue-400">About</a>
+          <a href="#projects" class="hover:text-blue-400">Projects</a>
+          <a href="#contact" class="hover:text-blue-400">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== Navbar Section ========== -->
+
+    <!-- ========== Hero Section ========== -->
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="h-screen flex flex-col justify-center items-center text-center px-4"
+    >
+      <img
+        src="../assets/profile-picture.png"
+        alt="Profile Image"
+        class="w-40 h-40 rounded-full border-4 border-blue-500 shadow-lg mb-6 transition-transform duration-300 hover:scale-110 hover:shadow-gray-700/70"
+      />
+
+      <h2 class="text-4xl md:text-5xl font-bold">
+        Hi, I'm <span class="text-blue-400">Nandkishor Mandal</span>
+      </h2>
+      <p class="mt-4 text-lg text-gray-300">
+        Fullstack Developer | Problem Solver | Learner
+      </p>
+
+      <!-- Buttons -->
+      <div
+        class="mt-6 flex flex-col sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0 w-full sm:w-auto"
+      >
+        <!-- View My Work (unchanged) -->
+        <a
+          href="#projects"
+          class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition text-center"
+        >
+          View My Work
+        </a>
+
+        <!-- View Resume -->
+        <a
+          href="../assets/nandkishor_resume.pdf"
+          target="_blank"
+          class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition text-center flex items-center justify-center space-x-2"
+        >
+          <i class="fas fa-file-pdf"></i>
+          <span>View Resume</span>
+        </a>
+
+        <!-- Download Resume -->
+        <a
+          href="../assets/nandkishor_resume.pdf"
+          download
+          class="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg transition text-center flex items-center justify-center space-x-2"
+        >
+          <i class="fas fa-download"></i>
+          <span>Download Resume</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== Hero Section ========== -->
+
+    <!-- ========== About Section ========== -->
+
+    <section id="about" class="py-20 max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
+      <p class="text-gray-300 text-base md:text-lg mb-6">
+        Dedicated to Building and Continuously Learning.
+      </p>
+
+      <p class="text-gray-300 text-base md:text-lg mb-6">
+        Skilled in <span class="font-semibold text-white">MERN Stack</span> —
+        MongoDB, Express.js, React.js, Node.js — with a focus on building
+        scalable, user-friendly web applications. Experienced in full-stack
+        development, REST APIs, and responsive design through academic and
+        personal projects.
+      </p>
+
+      <p class="text-gray-300 text-base md:text-lg mb-6">
+        Currently seeking an internship in the Information Technology industry
+        to apply my skills, learn from industry experts, and contribute to
+        impactful projects.
+      </p>
+
+      <p class="text-gray-300 text-base md:text-lg font-medium italic">
+        Build. Learn. Improve. Repeat.
+      </p>
+    </section>
+
+    <!-- ========== About Section ========== -->
+
+    <!-- ========== Project Section ========== -->
+
+    <section id="projects" class="py-20 bg-gray-800">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-10 text-center">Projects</h2>
+        <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+          <!-- Project card 1 -->
+          <div
+            class="bg-gray-700 rounded-lg shadow hover:shadow-2xl transition transform hover:-translate-y-2 overflow-hidden"
+          >
+            <img
+              src="../assets/hitesh-choudhary-01_cE4yUgOA-unsplash.jpg"
+              alt="Project 1"
+              class="w-full object-cover hover:scale-110 transition duration-500"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">Portfolio Website</h3>
+              <p class="mt-2 text-gray-300">
+                Responsive portfolio built with Tailwind CSS.
+              </p>
+              <a
+                href="#"
+                class="mt-4 block mx-auto w-fit bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project card 2 -->
+          <div
+            class="bg-gray-700 rounded-lg shadow hover:shadow-2xl transition transform hover:-translate-y-2 overflow-hidden"
+          >
+            <img
+              src="../assets/hitesh-choudhary-ee4g8naRkPk-unsplash.jpg"
+              alt="Project 1"
+              class="w-full object-cover hover:scale-110 transition duration-500"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">E-commerce UI</h3>
+              <p class="mt-2 text-gray-300">
+                Modern shopping interface with product grid
+              </p>
+              <a
+                href="#"
+                class="mt-4 block mx-auto w-fit bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project card 3 -->
+          <div
+            class="bg-gray-700 rounded-lg shadow hover:shadow-2xl transition transform hover:-translate-y-2 overflow-hidden"
+          >
+            <img
+              src="../assets/hitesh-choudhary-TRnGHYV7awY-unsplash.jpg"
+              alt="Project 1"
+              class="w-full object-cover hover:scale-110 transition duration-500"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">Blog Platform</h3>
+              <p class="mt-2 text-gray-300">
+                Clean blogging platform with responsive design.
+              </p>
+              <a
+                href="#"
+                class="mt-4 block mx-auto w-fit bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Project Section ========== -->
+
+    <!-- ========== Contact Section ========== -->
+
+    <section id="contact" class="py-20 max-w-3xl mx-auto text-center px-4">
+      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+      <form class="flex flex-col space-y-6">
+        <input
+          type="text"
+          placeholder="Your Name"
+          class="p-3 rounded bg-gray-700 border border-gray-600 focus:border-blue-400"
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          class="p-3 rounded bg-gray-700 border border-gray-600 focus:border-blue-400"
+        />
+        <textarea
+          placeholder="Your Message"
+          rows="4"
+          class="p-3 rounded bg-gray-700 border border-gray-600 focus:border-blue-400"
+        ></textarea>
+        <button class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg">
+          Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- ========== Contact Section ========== -->
+
+    <!-- ========== Footer Section ========== -->
+
+    <footer class="bg-gray-800 text-center py-6">
+      <p class="opacity-100">&copy Nandkishor Mandal. All Rights Reserved.</p>
+    </footer>
+
+    <!-- ========== Footer Section ========== -->
+
+    <!-- Menu Button Functionality -->
+    <script>
+      const menuBtn = document.querySelector("header button");
+      const closeBtn = document.getElementById("close-menu");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const overlay = document.getElementById("overlay");
+      const menuLinks = mobileMenu.querySelectorAll("a"); // all links in sidebar
+
+      // Function to close menu
+      const closeMenu = () => {
+        mobileMenu.classList.remove("translate-x-0");
+        mobileMenu.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+      };
+
+      // Open menu
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("translate-x-full");
+        mobileMenu.classList.add("translate-x-0");
+        overlay.classList.remove("hidden");
+      });
+
+      // Close on X button
+      closeBtn.addEventListener("click", closeMenu);
+
+      // Close on overlay click
+      overlay.addEventListener("click", closeMenu);
+
+      // Close on link click
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", closeMenu);
+      });
+    </script>
+  </body>
+</html>
